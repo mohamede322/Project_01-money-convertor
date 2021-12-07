@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Convertor</title>
+    <!-- style -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="/27881082_163719291088826_1429379345335451648_n.png" alt="" />
+    <div class="container">
+      <header class="header">
+        <p class="home">Home</p>
+        <p class="lang">العربية</p>
+      </header>
+      <main class="main">
+        <button class="btn">Convert Now</button>
+      </main>
+
+      <main class="second-main">
+        <div class="selects">
+          <div class="select-one">
+            <label class="fromlabel">FROM</label>
+            <select class="from">
+              <option value="USD" class="USD">
+                (&#36;) USD - United States Dollar
+              </option>
+              <option value="EUR" class="EUR">(&euro;) EURO</option>
+              <option value="ARS" class="ARS">
+                (&#36;) ARS - Argentine Peso
+              </option>
+            </select>
+          </div>
+          <div class="select-two">
+            <label class="tolabel">TO</label>
+            <input
+              class="to"
+              type="text"
+              value="EGP - Egyptian Pound"
+              readonly
+            />
+          </div>
+        </div>
+        <form class="form" autocomplete="off">
+          <label class="labelamount" for="amount">AMOUNT</label>
+          <input id="amount" type="number" />
+          <button class="second-conv">Convert</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
