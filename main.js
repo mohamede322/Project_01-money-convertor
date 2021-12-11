@@ -60,7 +60,7 @@ homeBtn.addEventListener("click", () => {
 
 function Calc() {
   if (amount.value === "") {
-    results.innerHTML = `aktb rkam ya 3rs`;
+    results.innerHTML = `Please type the amount to convert`;
     secondMain.appendChild(results);
   }
   if (fromSelect.value === "USD" && amount.value !== "") {
