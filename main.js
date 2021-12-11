@@ -13,6 +13,7 @@ let tolabel = document.querySelector(".tolabel");
 let img = document.querySelector("img");
 let header = document.querySelector("header");
 let labelAmount = document.querySelector(".labelamount");
+let selects = document.querySelector(".selects")
 
 langBtn.addEventListener("click", () => {
   if (langBtn.innerText === "العربية") {
@@ -28,6 +29,7 @@ langBtn.addEventListener("click", () => {
     tolabel.innerText = `الي`;
     labelAmount.innerText = `مبلغ`;
     header.style.cssText = "flex-direction: row-reverse";
+    selects.style.cssText = "direction:rtl;"
   } else if (langBtn.innerText === "English") {
     langBtn.innerText = "العربية";
     convertBtn.innerText = "Convert Now";
@@ -41,6 +43,7 @@ langBtn.addEventListener("click", () => {
     tolabel.innerText = `To`;
     labelAmount.innerText = `AMOUNT`;
     header.style.cssText = "flex-direction: row";
+    selects.style.cssText = "direction:ltr;"
   }
 });
 
